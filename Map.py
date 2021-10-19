@@ -48,3 +48,6 @@ def playerMap():
         print(decriptions[places][abouts])
         print(" ")
     print("☠-----☠-----☠-----☠-----☠")
+"""
+change
+"""
