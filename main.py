@@ -1,7 +1,7 @@
 # Course: CS 30
 # Period: 3
 # Date created: 20/9/2021
-# Date last modified: 
+# Date last modified: 10/20/2021
 # Name: Ben Oblinski
 # Description: Menu system for a text-based RPG game
 import sys
@@ -23,6 +23,7 @@ def main_menu():
     print("")
     print("You can type 'menu' at any time to see the above list")
     print("☠-----☠-----☠-----☠-----☠")
+    print("")
 
 
 # List of main weapons that the player can collect and use
@@ -37,6 +38,7 @@ secondary_weapons = ["Comabt Knife", "Hunting Knife", "Machete",
 healing_items = ["Bandages", "Adrealine Shot", "Disinfectant", "Health drink"]
 
 # Print the main menu text
+print("")
 main_menu()
 
 while True:
@@ -44,7 +46,8 @@ while True:
     # Asks the player to choose what they want to do
     user_input = str(input(""))
 
-    # This code prints the list of playable characters if the player types 'charc'
+    # This code prints the list of playable characters
+    # If the player types 'charc'
     if user_input == "charc":
         people.playerCharacters()
 
@@ -58,6 +61,7 @@ while True:
 
     # If the player wants to see the main menu, print the main menu text
     elif user_input == "menu":
+        print("")
         main_menu()
 
     # If the player asks to quit, askt ehm to confirm their decesion
