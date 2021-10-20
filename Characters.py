@@ -34,8 +34,11 @@ for robbery across the state",
 
 
 def playerCharacters():
-    print("")
-    print("☠-----☠-----CHARCATERS-----☠-----☠")
+    """ This function prints out the list of characters
+    from the characters dictionary
+    This function can be called by typing 'charc'
+    """
+    print("\n☠-----☠-----CHARCATERS-----☠-----☠")
     # if the player wants to see character traits...
     for person in charcters:
         print(f"-> {person}")
@@ -43,6 +46,5 @@ def playerCharacters():
         for stats in charcters[person]:
             print(f"{stats} - {charcters[person][stats]}")
             # print the character descriptions next to the name
-        print("")
-    print("☠-----☠-----☠-----☠-----☠")
-print("")
+        print(" ")
+    print("☠-----☠-----☠-----☠-----☠\n")

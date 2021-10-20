@@ -11,19 +11,18 @@ import Characters as people
 
 
 def main_menu():
-    # the deafault menu text is a function
-    # the menu shows you the options you can choose from
-    # this function can be called by typing 'menu'
-    print("☠-----☠-----MAIN MENU-----☠-----☠")
+    """ The deafault menu text is a function.
+    The menu shows you the options you can choose from.
+    This function can be called by typing 'menu'
+    """
+    print("\n☠-----☠-----MAIN MENU-----☠-----☠")
     print("You can do any of the following actions:")
-    print("-> charc   (Choose a Character to play)")
-    print("-> inv     (View the items in your inventory)")
-    print("-> map     (Look at your map to decide were to go)")
-    print("-> quit    (Leave the menu loop) ")
-    print("")
+    print("-> charc----(Choose a Character to play)")
+    print("-> inv------(View the items in your inventory)")
+    print("-> map------(Look at your map to decide were to go)")
+    print("-> quit-----(Leave the menu loop)\n")
     print("You can type 'menu' at any time to see the above list")
-    print("☠-----☠-----☠-----☠-----☠")
-    print("")
+    print("☠-----☠-----☠-----☠-----☠\n")
 
 
 # List of main weapons that the player can collect and use
@@ -38,7 +37,6 @@ secondary_weapons = ["Comabt Knife", "Hunting Knife", "Machete",
 healing_items = ["Bandages", "Adrealine Shot", "Disinfectant", "Health drink"]
 
 # Print the main menu text
-print("")
 main_menu()
 
 while True:
@@ -61,15 +59,13 @@ while True:
 
     # If the player wants to see the main menu, print the main menu text
     elif user_input == "menu":
-        print("")
         main_menu()
 
     # If the player asks to quit, askt ehm to confirm their decesion
     elif user_input == "quit":
         print("are you sure you want to quit?")
         print("type 'y' to confrim")
-        print("type any key to stay in the game")
-        choose_to_quit = input("")
+        choose_to_quit = input("type any key to stay in the game\n")
 
         # This code shuts down the menu if the player types 'quit'
         if choose_to_quit == "y":
@@ -78,11 +74,9 @@ while True:
 
         # This code returns to the main menu if the player decides not to quit
         else:
-            print("You have choosen not to quit")
-            print("")
+            print("You have choosen not to quit\n")
             main_menu()
 
     # This code returns an error message if the player makes a typo
     else:
-        print("Invalid response. Please type again.")
-        print("")
+        print("Invalid response. Please type again.\n")

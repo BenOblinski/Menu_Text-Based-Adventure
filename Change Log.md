@@ -11,3 +11,6 @@
 - added skull text characters above and below menus for decorative effects
 ## Version 3.2
 - minor PEP8 changes to line lenght and indentation
+## Version 3.3
+- changed all instances of print(" ") to print("...\n")
+- added docstring descriptions to all functions

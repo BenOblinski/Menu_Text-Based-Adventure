@@ -3,21 +3,21 @@
 # Date created: 20/9/2021
 # Date last modified: 10/20/2021
 # Name: Ben Oblinski
-# Description: Menu system for a text-based RPG game
+# Description: map system for the game menu
 from numpy import*
 
-decriptions = {"Tumbleweed":
-               {"Description": "A dry, dying town \
+descriptions = {"Tumbleweed":
+                {"Description": "A dry, dying town \
 in the middle of the desert"},
-               "Rattlesnake farm":
-               {"Desription": "An old cattle farm \
+                "Rattlesnake farm":
+                {"Desription": "An old cattle farm \
 turned into a gang hideout by Jake \"The Snake\""},
-               "Claymore": {"Desription": "A small, mostly abandoned settlment \
+                "Claymore": {"Desription": "A small, mostly abandoned settlment \
 with houses made of clay"},
-               "New Highlands":
-                           {"Descrpition": "A new, classy town"},
-               "Great Bear Falls":
-                           {"Descrpition": "An enormous water fall\
+                "New Highlands":
+                            {"Descrpition": "A new, classy town"},
+                "Great Bear Falls":
+                            {"Descrpition": "An enormous water fall\
 that leads into the White water river"}}
 # list of loactions around the world
 # list can be accsessed by typing 'map'
@@ -44,14 +44,18 @@ location = array("""
 
 
 def playerMap():
+    """ This function prints out the map of
+    areas the player can go.
+    Prints out the above map and the dictionary
+    of disriptions of the places
+    This function can be called by typing 'inv'
+    """
     # if the player wants to see the map...
-    print("")
-    print("☠-----☠-----MAP-----☠-----☠")
+    print("\n☠-----☠-----MAP-----☠-----☠")
     print(location)
-    for places in decriptions:
+    for places in descriptions:
         print(places)
-        for abouts in decriptions[places]:
-            print(decriptions[places][abouts])
-            print(" ")
-    print("☠-----☠-----☠-----☠-----☠")
-print("")
+        for abouts in descriptions[places]:
+            print(descriptions[places][abouts])
+        print(" ")
+    print("☠-----☠-----☠-----☠-----☠\n")
