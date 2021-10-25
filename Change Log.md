@@ -4,7 +4,7 @@
 ## Version 2.0
 #### Second in-class assignment "RPG Inventory"
 ## Version 3.0
-#### Third in-class assignment "RPG: Modules and Maps"
+#### Third in-class assignment "RPG Modules and Maps"
 - split the map, character, and inventory functions into seperate files
 - added a visual map. and descriptions of the map below it
 ## Version 3.1
@@ -14,3 +14,8 @@
 ## Version 3.3
 - changed all instances of print(" ") to print("...\n")
 - added docstring descriptions to all functions
+## Version 4.0
+#### Fourth in-class assignment "RPG Exception Handling"
+- added a new error message for user input
+- added an error message for exernal files that were not imported correctly
+- code displays a positive message if all files are successfully

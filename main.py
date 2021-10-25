@@ -1,13 +1,22 @@
 # Course: CS 30
 # Period: 3
 # Date created: 20/9/2021
-# Date last modified: 10/20/2021
+# Date last modified: 10/25/2021
 # Name: Ben Oblinski
 # Description: Menu system for a text-based RPG game
-import sys
-import Inventory as inv
-import Map as location
-import Characters as people
+
+# Imports the exernal files and displays
+# a warining if there is a problem
+try:
+    import sys
+    import Inventory as inv
+    import Map as location
+    import Characters as people
+except ModuleNotFoundError:
+    print("--------------------WARNING--------------------")
+    print("One of the reqested files could not be imported")
+else:
+    print("All files were imported successfully")
 
 
 def main_menu():
@@ -79,4 +88,5 @@ while True:
 
     # This code returns an error message if the player makes a typo
     else:
-        print("Invalid response. Please type again.\n")
+        print("Invalid response. Please try a valid response.")
+        print("you can type 'menu' at any time to see the list of options\n")

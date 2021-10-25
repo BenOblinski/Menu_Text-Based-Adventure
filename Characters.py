@@ -1,7 +1,7 @@
 # Course: CS 30
 # Period: 3
 # Date created: 20/9/2021
-# Date last modified: 10/20/2021
+# Date last modified: 10/25/2021
 # Name: Ben Oblinski
 # Description: Character portion of the game menu
 
@@ -31,7 +31,6 @@ for robbery across the state",
 # list of your characters
 # this list can be accsessed by typing 'charc'
 # subdivisions of the inv dictonary: characters/person/stats
-
 
 def playerCharacters():
     """ This function prints out the list of characters
