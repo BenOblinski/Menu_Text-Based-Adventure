@@ -4,10 +4,26 @@
 # Date last modified: 10/25/2021
 # Name: Ben Oblinski
 # Description: Inventory portion of the game menu
+from random import choice, randint
 
+# List of items you have
 inventory = []
-# list of items the player is carrying
-# list can be accsessed by typing 'inv'
+
+# List of items that can be otained
+items = ['sword', 'knife', 'rapier', 'club', 'mace',
+         'rubber chicken', 'spear', 'frying pan', 'katana']
+
+# Dictionary of the stats of all the weapons
+item_stats = {'sword': {'Damage': 3, 'Handling': 2},
+              'knife': {'Damage': 1, 'Handling': 4},
+              'rapier': {'Damage': 2, 'Handling': 5},
+              'club': {'Damage': 3, 'Handling': 1},
+              'mace': {'Damage': 5, 'Handling': 2},
+              'rubber chicken': {'Damage': 7, 'Handling': 5},
+              'spear': {'Damage': 3, 'Handling': 4},
+              'frying pan': {'Damage': 6, 'Handling': 4},
+              'katana': {'Damage': 4, 'Handling': 6}
+              }
 
 
 def playerInventory():
@@ -21,5 +37,20 @@ def playerInventory():
         print("You are not carryinging any items")
     else:
         for item in inventory:
-            print(item)
+            x = item
+            print(f"{item.title()}| Damage:{item_stats[x]['Damage']}\
+ Handling:{item_stats[x]['Handling']}")
     print("☠-----☠-----☠-----☠-----☠\n")
+
+
+def pick_up_item(item):
+    """When the player moves onto a space occupied by an item
+    this code chooses a random item to display
+    """
+    print(f"There is a {item} here!")
+    take_item = input("Would you like to pick it up? Y/N\n")
+    if take_item.lower() == 'y':
+        inventory.append(item)
+        playerInventory()
+    else:
+        playerInventory()
