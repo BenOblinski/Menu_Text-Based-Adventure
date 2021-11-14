@@ -100,11 +100,9 @@ def printChosenClass():
     character1.health = classes[classChoice]["Health"]
     character1.attack = classes[classChoice]["Attack"]
     character1.defense = classes[classChoice]["Defense"]
-    character1.speed = classes[classChoice]["Speed"]
     character1.location = 'a1'
     print(f"Class: {classChoice}")
     print(f"Health: {character1.health}")
     print(f"Attack: {character1.attack}")
     print(f"Defense: {character1.defense}")
-    print(f"Speed: {character1.speed}")
     print("☠-----☠-----☠-----☠-----☠-----☠")
