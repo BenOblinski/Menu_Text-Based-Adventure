@@ -7,22 +7,22 @@
 
 # Dictonary that holds all of the classes a play can play as and their stats
 Description = "Description"
-classes = {"Heavy": {Description: "A slow, but tough fighter",
+classes = {"heavy": {Description: "A slow, but tough fighter",
                      "Health": 160,
                      "Attack": 35,
                      "Defense": 25},
-           "Footsoldier":
+           "footsoldier":
                     {Description: "A quick and agile, but \
 weak, gunfighter",
                      "Health": 100,
                      "Attack": 30,
                      "Defense": 20},
-           "Sniper":
+           "sniper":
                     {Description: "Heavy attack, but weak and slow",
                      "Health": 110,
                      "Attack": 45,
                      "Defense": 35},
-           "Marine":
+           "marine":
                     {Description: "A well rounded class with no \
 specific advatages or disadvantages",
                      "Health": 115,
@@ -53,11 +53,11 @@ def ClassMenuDemo():
 def CharacterCreationMenu():
     a = 1
     filename1 = 'CharacterName.txt'
-    nameChoice = input("Name your Character\n")
+    nameChoice = input("name your character\n")
     with open(filename1, 'w') as NameFile:
         NameFile.write(nameChoice)
-        print("\nName confirmed")
-        print("Please choose a class")
+        print("\nname confirmed")
+        print("please choose a class")
 
     # This block shows the player the classes they can play as
     ClassMenuDemo()
@@ -66,23 +66,23 @@ def CharacterCreationMenu():
     while a == 1:
         filename2 = 'CharacterClass.txt'
         x = str(input("\nChoose a Class\n"))
-        classChoice = x.title()
-        if classChoice == 'Heavy':
+        classChoice = x.lower()
+        if classChoice == 'heavy':
             a = 2
-        elif classChoice == 'Footsoldier':
+        elif classChoice == 'footsoldier':
             a = 2
-        elif classChoice == 'Marine':
+        elif classChoice == 'marine':
             a = 2
-        elif classChoice == 'Sniper':
+        elif classChoice == 'sniper':
             a = 2
         else:
-            print("Typo, Please type again")
+            print("typo, please type again")
     with open(filename2, 'w') as ClassFile:
             ClassFile.write(classChoice)
-    print("Class Confirmed\n")
+    print("class confirmed\n")
 
     # This block lets the player review their selections
-    print("☠-----☠-----MEET YOUR CHARACTER-----☠-----☠")
+    print("your character")
     name = open('CharacterName.txt', 'r')
     nameText = name.read()
     name.close()

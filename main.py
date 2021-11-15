@@ -11,12 +11,36 @@ import CreateCharacter as create
 import Map as gridmap
 import time
 
-
+"""
 # Prints welcome menu
-print("💀Welcome to Dusk💀")
-print("Dust is a text based adventure game set in a dark, sci-fi world")
-print("As the story begins you are")
-print("the lone survior of a mysterious disater.\n")
+print("welcome to Dusk")
+time.sleep(3)
+print("Dusk is a text based adventure game set in a dark, sci-fi world")
+time.sleep(3)
+print("as the story begins you are")
+print("the lone survior of a mysterious disater")
+time.sleep(3)
+print('you wake up in an abandonded facility with no memories')
+print('and no weapons or items')
+time.sleep(3)
+print('suddenly, you get the feeling that you are being watched')
+time.sleep(3)
+print('in the distance, you hear some kind of animal howl...')
+time.sleep(5)
+x = 
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░░███░░██░█░████░██░░█░░░░░░
+░░░░░██░█░██░█░█░░░░██░█░░░░░░░
+░░░░░██░█░██░█░░█░░░███░░░░░░░░
+░░░░░██░█░██░█░░░█░░██░█░░░░░░░
+░░░░░██░█░██░█░░░░█░██░░█░░░░░░
+░░░░░███░░████░████░██░░░█░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+print(x)
+time.sleep(5)
+"""
 # Calls the character creation menu
 create.CharacterCreationMenu()
 

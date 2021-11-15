@@ -10,19 +10,21 @@ from random import choice, randint
 inventory = []
 
 # List of items that can be otained
-items = ['sword', 'knife', 'rapier', 'club', 'mace',
-         'rubber chicken', 'spear', 'frying pan', 'katana']
+items = ['crowbar', 'knife', 'spiked bat', 'club', 'lead pipe',
+         'rubber chicken', 'broken bottle', 'frying pan', 'katana', 
+         'hammer']
 
 # Dictionary of the stats of all the weapons
-item_stats = {'sword': {'Damage': 3, 'Handling': 2},
+item_stats = {'crowbar': {'Damage': 3, 'Handling': 2},
               'knife': {'Damage': 1, 'Handling': 4},
-              'rapier': {'Damage': 2, 'Handling': 5},
+              'spiked bat': {'Damage': 2, 'Handling': 5},
               'club': {'Damage': 3, 'Handling': 1},
-              'mace': {'Damage': 5, 'Handling': 2},
+              'lead pipe': {'Damage': 5, 'Handling': 2},
               'rubber chicken': {'Damage': 7, 'Handling': 5},
-              'spear': {'Damage': 3, 'Handling': 4},
+              'broken bottle': {'Damage': 3, 'Handling': 4},
               'frying pan': {'Damage': 6, 'Handling': 4},
-              'katana': {'Damage': 4, 'Handling': 6}
+              'katana': {'Damage': 4, 'Handling': 6},
+              'hammer': {'Damage': 3, 'Handling': 5}
               }
 
 
