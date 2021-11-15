@@ -11,7 +11,6 @@ import CreateCharacter as create
 import Map as gridmap
 import time
 
-"""
 # Prints welcome menu
 print("welcome to Dusk")
 time.sleep(3)
@@ -27,7 +26,7 @@ print('suddenly, you get the feeling that you are being watched')
 time.sleep(3)
 print('in the distance, you hear some kind of animal howl...')
 time.sleep(5)
-x = 
+x = """
 
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░███░░██░█░████░██░░█░░░░░░
@@ -37,10 +36,10 @@ x =
 ░░░░░██░█░██░█░░░░█░██░░█░░░░░░
 ░░░░░███░░████░████░██░░░█░░░░░
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
+"""
 print(x)
 time.sleep(5)
-"""
+
 # Calls the character creation menu
 create.CharacterCreationMenu()
 
@@ -73,8 +72,8 @@ print('Spaces with a \'☠\' are enemies, avoid them, or be ready for a fight')
 print('A \'$\' shows that there is an item to pick up here')
 print('Your character is represented by a \'🗡\'')
 print('The start and end tiles are marked with an \'S\' and \'E\' respectively')
+time.sleep(5)
 print('☠-----☠-----MAP-----☠-----☠')
-time.sleep(2.5)
 # Calls the map function. \
 #This function controls the majority of the game
 gridmap.main()

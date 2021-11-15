@@ -163,7 +163,7 @@ class ChainSawManiac(enemy):
 class ExplodingMushroom(enemy):
     """Explodes deeling damage when a player comes near it"""
     def __init__(self):
-        self.name = 'Chain Saw Maniac'
+        self.name = 'Exploding Mushroom'
         self.description = 'A humongous fungus that explodes\
  when touched'
         self.hp = 1
